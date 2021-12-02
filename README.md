@@ -1,1 +1,1 @@
-# odin-etch-a-sketch
+This is a JavaScript project to create a grid of divs on a webpage that act as an etch-a-sketch as the user hovers over each square with the mouse. It is meant to combine concepts of HTML, CSS, and Javascript for practice.
