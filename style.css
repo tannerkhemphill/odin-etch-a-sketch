@@ -1,9 +1,25 @@
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
 #container {
     display: inline-grid;
     border: 5px solid black;
     border-radius: 5px;
     height: 575px;
     width: 575px;
+    float: right;
 }
 
 .grid {
