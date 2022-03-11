@@ -1,5 +1,6 @@
 const container = document.getElementById('container');
 
+// Function to make the etch-a-sketch grid with the given number of rows x cols
 function makeGrid(num) { 
     for (let i = 0; i < num*num; i++) {
         let cell = document.createElement('div');
@@ -11,11 +12,13 @@ function makeGrid(num) {
 
     let grid = document.querySelectorAll('.grid');
 
+    // Add event listeners to each grid cell to color it black when mouse passes over
     grid.forEach(cell => cell.addEventListener("mouseenter", function(e) {
     e.target.style.backgroundColor = "black";
 }));
 };
 
+// Function to reset the etch-a-sketch board
 function reset() {
     document.querySelectorAll(".grid").forEach((e) => e.parentNode.removeChild(e));
     let num = -1;
@@ -25,8 +28,10 @@ function reset() {
     makeGrid(num);
 };
 
+// Display a 16x16 etch-a-sketch board upon page load
 makeGrid(16);
 
 const button = document.getElementById('btn');
 
+// Add event listener to reset board button
 button.onclick = () => reset();
