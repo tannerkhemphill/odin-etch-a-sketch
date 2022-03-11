@@ -35,3 +35,4 @@ const button = document.getElementById('btn');
 
 // Add event listener to reset board button
 button.onclick = () => reset();
+
